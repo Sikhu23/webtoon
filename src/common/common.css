@@ -1,0 +1,74 @@
+.cardCon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* margin: -10px; Adjust based on the spacing you want */
+}
+
+
+
+
+.genreImage{
+    width: 10rem;
+    height: 10rem;
+    margin: auto;
+}
+
+.cardDet {
+    /* border: 1px solid #ddd; */
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    /* padding: 20px; */
+    background-color: #e6ebe6;
+}
+
+.cardDet:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+.card-title {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: #fff;
+    width: 100%; 
+    /* max-width: 600px;  */
+    /* margin: 2%; */
+  }
+  
+  .card-title:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-image-title img {
+    width: 150px; 
+    height: auto;
+    border-right: 1px solid #ddd;
+  }
+  
+  .card-content-title {
+    padding: 20px;
+    flex: 1;
+  }
+  
+  .card-title {
+    margin: 1%;
+    font-size: 1.5em;
+  }
+  
+  .card-synopsis-title {
+    margin-top: 10px;
+    color: #666;
+  }
+  
