@@ -11,7 +11,7 @@ const Body = () => {
 
 
     useEffect(()=>{
-        // fetchData()
+        fetchData()
 
     },[])
 
@@ -32,6 +32,7 @@ try {
 	const response = await fetch(url, options);
 	const result = await response.json();
     const data = result?.message?.result?.genreTabList?.genreTabs
+    console.log("data",data)
     setResDetails(data)
 } catch (error) {
 	console.error(error);
@@ -43,8 +44,8 @@ try {
 
     return (
         <div>
-            {/* <GenreCon data={resDetails}/> */}
-            <TitleCon/>
+            <GenreCon data={resDetails}/>
+            {/* <TitleCon/> */}
             
         </div>
     );
